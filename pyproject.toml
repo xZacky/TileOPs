@@ -42,12 +42,6 @@ build-backend = "setuptools.build_meta"
 where = ["."]
 exclude = ["tests", "tests.*", "benchmarks", "benchmarks.*"]
 
-[tool.yapf]
-based_on_style = "yapf"
-column_limit = 100
-indent_width = 4
-spaces_before_comment = 2
-
 [tool.codespell]
 ignore-words-list = "nd, te, ist, LOD, offen, NotIn, HSA"
 skip = [
@@ -73,7 +67,7 @@ select = [
     "B",
     # flake8-simplify
     "SIM",
-    # isort (disabled - yapf handles formatting)
+    # isort
     # "I",
     # pydocstyle (Google Docstrings)
     # "D",
