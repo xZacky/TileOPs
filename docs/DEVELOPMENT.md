@@ -6,10 +6,10 @@ This document outlines the software engineering standards, architecture, and dev
 
 TileOPs follows a strict **2-Layer Hierarchical Architecture**. This separation of concerns ensures that hardware-specific optimizations (Kernels) are decoupled from user-facing APIs (Ops).
 
-| Layer |   Name     |   Analog   | Description                                                                                                                                                   |
-| :---: | :--------: | :--------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **L2** |   **Op**  | `torch.ops` | **Stateless Dispatcher**: Hardware-agnostic entry point. Dispatches to specific kernels. Compatible with **CUDA-Graph** & **torch.compile**. |
-| **L1** | **Kernel** |  TileLang  | **Implementation**: Raw TileLang kernels optimized for specific hardware (e.g., Hopper, Ampere).                                                              |
+| Layer  |    Name    |   Analog    | Description                                                                                                                                  |
+| :----: | :--------: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| **L2** |   **Op**   | `torch.ops` | **Stateless Dispatcher**: Hardware-agnostic entry point. Dispatches to specific kernels. Compatible with **CUDA-Graph** & **torch.compile**. |
+| **L1** | **Kernel** |  TileLang   | **Implementation**: Raw TileLang kernels optimized for specific hardware (e.g., Hopper, Ampere).                                             |
 
 ______________________________________________________________________
 

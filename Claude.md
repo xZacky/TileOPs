@@ -28,5 +28,5 @@ TileOPs (TOP) is a high-performance LLM operator library built on TileLang. The 
 
 | Skill                   | Trigger                                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `migrating-new-op`      | Use when adding or migrating an operator to TileOPs with the required kernel->op delivery path and validation checklist     |
+| `migrating-new-op`      | Use when adding or migrating an operator to TileOPs with the required kernel->op delivery path and validation checklist                      |
 | `creating-pull-request` | Use when turning local changes into a clean PR end-to-end: pre-checks (format/tests), branch/commit, PR title/labels, review and CI handling |
